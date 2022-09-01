@@ -20,7 +20,7 @@ public class TestArtifactoryIntegration {
 
   public static final GenericContainer<?> container = new GenericContainer<>(
           DockerImageName.parse(
-                  "psp-docker-dev-local/receivable-financial-manager-monitors:1.0.172"));
+                  "<imageName:version>"));
 
 
   @BeforeEach

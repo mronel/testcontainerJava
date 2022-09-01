@@ -23,7 +23,7 @@ public class KafkaContainerConfiguration {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(KafkaContainerConfiguration.class);
 
-  public static KafkaContainer kafka = new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:6.2.1"));
+  public static KafkaContainer kafka = new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:latest"));
 
   public void startKafkaContainer(@Nullable String dockerImage, @Nullable String groupId) throws Exception {
 
